@@ -141,7 +141,6 @@ h1, h2, h3 {
     line-height: 1.8;
 }
 
-
 .about {
     opacity: 0;
     transform: translateY(30px);
@@ -151,4 +150,16 @@ h1, h2, h3 {
 .about.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.project-card {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.project-card img {
+    height: 400px;
+    object-fit: cover;
+}
+.overlay {
+    padding: 10px;
 }

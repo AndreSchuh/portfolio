@@ -57,13 +57,12 @@
     </section>
 
     <section class="projects">
-        <div class="container">
-            <h2>Projetos</h2>
-            <div class="row">
-                <div class="col-md-4">
+        <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
                     <a href="https://github.com/AndreSchuh/park-api-SpringBoot" target="_blank">
                         <div class="project-card">
-                            <img src="imagens/springBoot.png" alt="Projeto 1">
+                            <img src="imagens/springBoot.png" class="d-block w-100" alt="Projeto 1">
                             <div class="overlay">
                                 <h3>API's usando SpringBoot</h3>
                                 <p>Projetos completos com criptografia, banco de dados e tudo isso de forma conteinerizada com Docker</p>
@@ -71,35 +70,39 @@
                         </div>
                     </a>
                 </div>
-
-                <div class="col-md-4">
+                <div class="carousel-item">
                     <a href="https://github.com/AndreSchuh/Java" target="_blank">
                         <div class="project-card">
-                            <img src="imagens/java.png" alt="Projeto 2">
+                            <img src="imagens/java.png" class="d-block w-100" alt="Projeto 2">
                             <div class="overlay">
                                 <h3>Java</h3>
                                 <p>Toda a base de Java desde seus fundamentos até tópicos mais complexos</p>
                             </div>
                         </div>
-                    </a>  
+                    </a>
                 </div>
-                
-                      
-                <div class="col-md-4">
-                    <a href="https://github.com/AndreSchuh/gerenciador-tarefas-Node.js" target="_blank">   
+                <div class="carousel-item">
+                    <a href="https://github.com/AndreSchuh/gerenciador-tarefas-Node.js" target="_blank">
                         <div class="project-card">
-                            <img src="imagens/node.png" alt="Projeto 3">
+                            <img src="imagens/node.png" class="d-block w-100" alt="Projeto 3">
                             <div class="overlay">
                                 <h3>Node.js</h3>
                                 <p>Criação de API's com projetos reais envolvendo conexão com banco de dados e mais!</p>
                             </div>
                         </div>
-                    </div>
-                </a>    
+                    </a>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
-
     <section class="contact">
         <div class="container">
             <h2>Contato</h2>
